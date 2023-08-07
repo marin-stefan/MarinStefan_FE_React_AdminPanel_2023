@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# JavaScript Advanced - REACT - Project 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Contains
 
-## Available Scripts
+#### 1. Header
 
-In the project directory, you can run:
+#### 2. Nav-Bar
 
-### `npm start`
+#### 3. User-Add-Form
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 4. Content
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 5. Footer
 
-### `npm test`
+## Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a small project that covers the first half of the course. It is a SPA displaying a Header with a title, a navbar with four buttons, a main section divided into a user add form to the left and a content to the right and a footer on the bottom off course.
+The buttons on the navbar have different functionality. The first two are color input buttons that change the background color of the main window and the text color of the page and the other two decide what is shown in the content section, either the list of users or the list of posts.
+The user add for adds users to the user list that is fetched and displayed onload. The form has data validation, the name cannot be empty, and the email must have correct format. Also, it has a gold client checkbox.
+The content section displays a list of users that comes from the given API or a list of posts from the API.
+It is a list of users or posts that individually have a delete button that will delete the certain user or post from the current displayed list.
+The Footer section displays info for the Project and the developer.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Requirements were :
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Start by creating a basic React Project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Add a title
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Add a user-add-form with name, email and a checkbox for gold client.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Add a color input button to change the background color of the window, set the initial background to white.
 
-## Learn More
+* Add another color input button that changes text color for the whole app. Choose a default color.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Create two new components UserList and UserItem. UserList will be a list of UserItem components. In UserList each UserItem component will have data taken from the URL https://jsonplaceholder.typicode.com/users.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Create two new components PostList and PostItem. PostList will be a list of PostItem components. In PostList each PostItem component will have data taken from the URL https://jsonplaceholder.typicode.com/posts.
 
-### Code Splitting
+* Create 2 buttons: Show Users and Show posts. Default users will be shown. On click the list shown on the screen must be updated according to the button, showing users for 'Show Users' and showing posts for 'Show Posts'.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Add Delete button for every user / post. The buttons will update the displayed list.
 
-### Analyzing the Bundle Size
+* Add data validation for name and email. No empty names or no incorrect email formats allowed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Add styling and structural design for more user-friendly experience.
